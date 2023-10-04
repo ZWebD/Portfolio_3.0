@@ -10,7 +10,10 @@ import { delay } from "framer-motion/dom";
 
 export default function Intro() {
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
+    <section
+      id="home"
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+    >
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -48,10 +51,10 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Zoltan</span> a self-learned{" "}
-        <span className="font-bold">Front-end engineer</span> with coding
-        experience. I enjoy building sites, main focus on{" "}
-        <span className="underline">React</span>.
+        <span className="font-bold">Hello, I'm Zoltan</span> a self-learned
+        <span className="font-bold"> Front-end engineer</span> with coding
+        experience. I enjoy building sites, with a main focus on
+        <span className="underline"> React</span>.
       </motion.h1>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-3 px-4 text-lg font-medium"
