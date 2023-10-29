@@ -37,7 +37,7 @@
     "@types/react": "^18.2.33",
     "@types/react-dom": "^18.2.14",
     "@types/react-vertical-timeline-component": "^3.3.5",
-    "autoprefixer": "latest",
+    "autoprefixer": "^10.4.16",
     "eslint": "^8.52.0",
     "eslint-config-next": "^14.0.0",
     "postcss": "latest",
