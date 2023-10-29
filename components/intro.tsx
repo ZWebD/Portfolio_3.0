@@ -17,7 +17,7 @@ export default function Intro() {
     <section
       id="home"
       ref={ref}
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mt-28 mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -58,8 +58,8 @@ export default function Intro() {
       >
         <span className="font-bold">Hello, I'm Zoltan</span> a self-learned
         <span className="font-bold"> Front-end engineer</span> with coding
-        experience. I enjoy building sites, with a main focus on
-        <span className="underline"> React</span>.
+        experience. I enjoy building sites, with a main focus on{" "}
+        <span className="underline">React</span>.
       </motion.h1>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-3 px-4 text-lg font-medium"
@@ -81,25 +81,27 @@ export default function Intro() {
         <a
           href="/CV.pdf"
           download
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
         >
           Download CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
-        <a
-          href="https://linkedin.com/in/zoltan-szabo-048a51136/"
-          target="_blank"
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack"
-        >
-          <BsLinkedin />
-        </a>
-        <a
-          href="https://github.com/ZWebD"
-          target="_blank"
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 test-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack"
-        >
-          <FaGithubSquare />
-        </a>
+        <div className="flex flex-row gap-2">
+          <a
+            href="https://linkedin.com/in/zoltan-szabo-048a51136/"
+            target="_blank"
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          >
+            <BsLinkedin />
+          </a>
+          <a
+            href="https://github.com/ZWebD"
+            target="_blank"
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 test-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          >
+            <FaGithubSquare />
+          </a>
+        </div>
       </motion.div>
     </section>
   );
