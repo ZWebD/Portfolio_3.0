@@ -10,6 +10,14 @@ html.dark {
   --line-color: rgba(255, 255, 255, 0.2);
 }
 
+#blur1,
+#blur2 {
+  filter: blur(10rem);
+  -webkit-filter: blur(10rem);
+  backdrop-filter: blur(-10rem);
+  -webkit-backdrop-filter: blur(-10rem);
+}
+
 .borderBlack {
   @apply border border-black/10;
 }
