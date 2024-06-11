@@ -3,8 +3,8 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import mapTrackImg from "@/public/mapTrack.png";
+import guessNumImg from "@/public/guessNum.png";
 
 export const links = [
   {
@@ -23,10 +23,10 @@ export const links = [
     name: "Skills",
     hash: "#skills",
   },
-  {
-    name: "Experience",
-    hash: "#experience",
-  },
+  // {
+  //   name: "Experience",
+  //   hash: "#experience",
+  // },
   {
     name: "Contact",
     hash: "#contact",
@@ -69,18 +69,18 @@ export const projectsData = [
     imageUrl: corpcommentImg,
   },
   {
-    title: "rmtDev",
+    title: "MapTrack",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "It's a small App for recording Running and Cycling exercises, using geolocation.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    imageUrl: mapTrackImg,
   },
   {
-    title: "Word Analytics",
+    title: "Guess a number",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "A little game where you need to guess a number between 1 and 20 the game will tell you whether the number is higher or lower.",
+    tags: ["JavaScript", "HTML", "CSS"],
+    imageUrl: guessNumImg,
   },
 ] as const;
 
@@ -94,14 +94,14 @@ export const skillsData = [
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
+  // "Prisma",
+  // "MongoDB",
+  // "Redux",
+  // "GraphQL",
+  // "Apollo",
   "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
+  // "PostgreSQL",
+  // "Python",
+  // "Django",
   "Framer Motion",
 ] as const;
