@@ -2,7 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
+import tixGigsImg from "@/public/TixGigs.png";
 import mapTrackImg from "@/public/mapTrack.png";
 import guessNumImg from "@/public/guessNum.png";
 
@@ -16,12 +16,12 @@ export const links = [
     hash: "#about",
   },
   {
-    name: "Projects",
-    hash: "#projects",
-  },
-  {
     name: "Skills",
     hash: "#skills",
+  },
+  {
+    name: "Projects",
+    hash: "#projects",
   },
   // {
   //   name: "Experience",
@@ -62,17 +62,28 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "TixGigs",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Searching platform where you can find upcoming events using Ticket Master API. ",
+    dev: "Under development!",
+    tags: ["React", "Next.js", "TypeScript", "Tailwind", "Framer Motion"],
+    buttons: [
+      { name: "GitHub", url: "" },
+      { name: "LiveDemo", url: "" },
+    ],
+    imageUrl: tixGigsImg,
   },
   {
     title: "MapTrack",
     description:
       "It's a small App for recording Running and Cycling exercises, using geolocation.",
+    dev: "",
+
     tags: ["HTML", "CSS", "JavaScript"],
+    buttons: [
+      { name: "GitHub", url: "" },
+      { name: "LiveDemo", url: "" },
+    ],
     imageUrl: mapTrackImg,
   },
   {
@@ -80,6 +91,11 @@ export const projectsData = [
     description:
       "A little game where you need to guess a number between 1 and 20 the game will tell you whether the number is higher or lower.",
     tags: ["JavaScript", "HTML", "CSS"],
+    dev: "",
+    buttons: [
+      { name: "GitHub", url: "" },
+      { name: "LiveDemo", url: "" },
+    ],
     imageUrl: guessNumImg,
   },
 ] as const;
@@ -99,7 +115,7 @@ export const skillsData = [
   // "Redux",
   // "GraphQL",
   // "Apollo",
-  "Express",
+  // "Express",
   // "PostgreSQL",
   // "Python",
   // "Django",
