@@ -1,7 +1,7 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { easeInOut, motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
@@ -12,6 +12,7 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const [toggle, setToggle] = useState(false);
 
   return (
     <section
@@ -25,6 +26,10 @@ export default function Intro() {
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ type: "tween", duration: 0.2 }}
+            onViewportEnter={() => setToggle(true)}
+            onViewportLeave={() => setToggle(false)}
+            onMouseEnter={() => setToggle(true)}
+            onMouseLeave={() => setToggle(false)}
           >
             <Image
               src="https://avatars.githubusercontent.com/u/25197239?v=4"
@@ -36,16 +41,24 @@ export default function Intro() {
               className="h-48 w-48 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
+          {}
           <motion.span
-            className="absolute bottom-0 right-0 text-5xl"
+            className="absolute items-center bottom-0 right-0 w-12 h-12"
             initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
+            animate={{
+              opacity: 1,
+              scale: toggle ? [3, 4, 4, 4, 4, 3] : 3,
+              rotate: toggle ? [null, 45, 0, 45, 0] : 0,
+            }}
             transition={{
-              type: "spring",
+              type: toggle ? easeInOut : "spring",
               stiffness: 125,
               delay: 0.1,
-              duration: 0.7,
+              duration: toggle ? 2 : 0.7,
+              ease: toggle ? "easeInOut" : null,
+              times: toggle ? [0, 0.2, 0.4, 0.6, 0.8, 1] : 0,
             }}
+            // whileHover={{ scale: 2 }}
           >
             👋
           </motion.span>
