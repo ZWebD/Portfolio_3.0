@@ -68,7 +68,7 @@ export const projectsData = [
     dev: "Under development!",
     tags: ["React", "Next.js", "TypeScript", "Tailwind", "Framer Motion"],
     buttons: [
-      { name: "GitHub", url: "" },
+      { name: "GitHub", url: "https://github.com/ZWebD/TixGigs" },
       { name: "LiveDemo", url: "" },
     ],
     imageUrl: tixGigsImg,
@@ -81,8 +81,8 @@ export const projectsData = [
 
     tags: ["HTML", "CSS", "JavaScript"],
     buttons: [
-      { name: "GitHub", url: "" },
-      { name: "LiveDemo", url: "" },
+      { name: "GitHub", url: "https://github.com/ZWebD/MapTrack" },
+      { name: "LiveDemo", url: "https://serene-bonbon-84c4b5.netlify.app/" },
     ],
     imageUrl: mapTrackImg,
   },
@@ -93,8 +93,8 @@ export const projectsData = [
     tags: ["JavaScript", "HTML", "CSS"],
     dev: "",
     buttons: [
-      { name: "GitHub", url: "" },
-      { name: "LiveDemo", url: "" },
+      { name: "GitHub", url: "https://github.com/ZWebD/NumberGuess" },
+      { name: "LiveDemo", url: "https://jade-crisp-d9ffdf.netlify.app/" },
     ],
     imageUrl: guessNumImg,
   },
