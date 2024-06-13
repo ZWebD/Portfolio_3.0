@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "Zoltan is a self-learned Front-end engineer with coding experience.",
   icons: {
     shortcut: { url: "/favicon.ico", type: "image/x-icon" },
-    icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
+    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
   },
 };
 

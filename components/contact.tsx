@@ -34,8 +34,8 @@ export default function Contact() {
 
         <p className=" text-gray-700 -mt-6 dark:text-white/80">
           Please contact me directly at{" "}
-          <a className="underline" href="mailto:exemple@gmail.com">
-            exemple@gmail.com
+          <a className="underline" href="mailto:zoltandev@gmail.com">
+            zoltandev@gmail.com
           </a>{" "}
           or through this form.
         </p>
@@ -68,6 +68,15 @@ export default function Contact() {
           />
           <SubmitBtn />
         </form>
+        <div
+          id="blur3"
+          className="bg-[#fbe2e3] absolute bottom-[16rem] blur-3xl -z-10 right-[30%] 2xl:right-[40%] h-[15rem] w-[31.25rem] rounded-full sm:w-[30.75rem]  dark:bg-[#946263] overflow-visible"
+        ></div>
+
+        <div
+          id="blur4"
+          className="bg-[#dbd7fb] absolute bottom-[10rem] blur-2xl -z-10 right-[25%] 2xl:right-[35%] h-[15rem] w-[31.25rem] rounded-full sm:w-[30.75rem]  dark:bg-[#676394] overflow-visible"
+        ></div>
       </motion.section>
     )
   );
