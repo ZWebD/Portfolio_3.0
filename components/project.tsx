@@ -65,7 +65,7 @@ export default function Project({
           src={imageUrl}
           alt="Project I worked on"
           quality={95}
-          className=" absolute  max-sm:opacity-10  top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
+          className=" absolute  max-sm:opacity-10 top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
             group-hover:-translate-x-3
             group-hover:translate-y-3
             group-hover:-rotate-2
@@ -73,7 +73,7 @@ export default function Project({
             group-even:group-hover:translate-x-3
             group-even:group-hover:translate-y-3
             group-even:group-hover:rotate-2
-        
+            transition-all ease-linear
             group-even:right-[initial]
             group-even:-left-40
            group-even:max-sm:opacity-10"

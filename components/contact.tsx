@@ -33,11 +33,12 @@ export default function Contact() {
         <SectionHeading>Contact me</SectionHeading>
 
         <p className=" text-gray-700 -mt-6 dark:text-white/80">
-          Please contact me directly at{" "}
-          <a className="underline" href="mailto:zoltandev@gmail.com">
+          If you'd like to collaborate or have an enquiry, please contact me
+          directly at{" "}
+          <a className="underline" href="mailto:zoltanszdev@gmail.com">
             zoltanszdev@gmail.com
           </a>{" "}
-          or through this form.
+          or by filling out this form.
         </p>
 
         <form
