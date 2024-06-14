@@ -35,7 +35,7 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
+    title: "Graduated boot camp",
     location: "Miami, FL",
     description:
       "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
@@ -64,37 +64,37 @@ export const projectsData = [
   {
     title: "TixGigs",
     description:
-      "Searching platform where you can find upcoming events using Ticket Master API. ",
-    dev: "Under development!",
+      "A platform where you can find upcoming events using Ticketmaster API. ",
+    dev: "Work in progress!",
     tags: ["React", "Next.js", "TypeScript", "Tailwind", "Framer Motion"],
     buttons: [
       { name: "GitHub", url: "https://github.com/ZWebD/TixGigs" },
-      { name: "LiveDemo", url: "" },
+      { name: "Live Demo", url: "https://tixgigs.vercel.app/" },
     ],
     imageUrl: tixGigsImg,
   },
   {
     title: "MapTrack",
     description:
-      "It's a small App for recording Running and Cycling exercises, using geolocation.",
+      "It's a small web app for recording Running and Cycling exercises, using geolocation.",
     dev: "",
 
     tags: ["HTML", "CSS", "JavaScript"],
     buttons: [
       { name: "GitHub", url: "https://github.com/ZWebD/MapTrack" },
-      { name: "LiveDemo", url: "https://serene-bonbon-84c4b5.netlify.app/" },
+      { name: "Live Demo", url: "https://serene-bonbon-84c4b5.netlify.app/" },
     ],
     imageUrl: mapTrackImg,
   },
   {
     title: "Guess a number",
     description:
-      "A little game where you need to guess a number between 1 and 20 the game will tell you whether the number is higher or lower.",
+      "A simple game where players need to guess a number between 1 and 20. Based on feedback on whether their guess is higher or lower than the correct number.",
     tags: ["JavaScript", "HTML", "CSS"],
     dev: "",
     buttons: [
       { name: "GitHub", url: "https://github.com/ZWebD/NumberGuess" },
-      { name: "LiveDemo", url: "https://jade-crisp-d9ffdf.netlify.app/" },
+      { name: "Live Demo", url: "https://jade-crisp-d9ffdf.netlify.app/" },
     ],
     imageUrl: guessNumImg,
   },
