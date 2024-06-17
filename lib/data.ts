@@ -5,6 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import tixGigsImg from "@/public/TixGigs.png";
 import mapTrackImg from "@/public/mapTrack.png";
 import guessNumImg from "@/public/guessNum.png";
+import portfolioImg from "@/public/portfolio.png";
 
 export const links = [
   {
@@ -72,6 +73,18 @@ export const projectsData = [
       { name: "Live Demo", url: "https://tixgigs.vercel.app/" },
     ],
     imageUrl: tixGigsImg,
+  },
+  {
+    title: "Portfolio 1.0",
+    description:
+      "I built this early portfolio concept  to improve my coding skills and knowledge",
+    dev: "",
+    tags: ["HTML", "SCSS", "JavaScript"],
+    buttons: [
+      { name: "GitHub", url: "https://github.com/ZWebD/Portfolio" },
+      { name: "Live Demo", url: "https://zoltandev-portfolio.netlify.app/" },
+    ],
+    imageUrl: portfolioImg,
   },
   {
     title: "MapTrack",
