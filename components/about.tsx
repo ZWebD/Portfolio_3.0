@@ -18,40 +18,31 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        From a very young age, I had a natural gift for{" "}
-        <span className="italic">constructing </span> and{" "}
-        <span className="italic">repairing </span>
-        things, <span className="italic">understanding</span> the intricacies of
-        various devices, and being intrigued by technology. This passion
-        ultimately led me to reach the peak of my career as a laptop engineer
-        within a decade. However, I began to question what was next for me and
-        desired to utilize my skills as a "
-        <span className=" font-medium"> Builder</span>,
+        From a very young age, I had a natural gift for constructing and
+        repairing things, understanding the intricacies of various devices, and
+        being intrigued by technology. This passion ultimately led me to reach
+        the peak of my career as a laptop engineer within a decade. However, I
+        began to question what was next for me and desired to utilize my skills
+        as a "<span className=" font-medium">Builder</span>,
         <span className=" font-medium"> Repairer</span>, and
         <span className=" font-medium"> Problem solver</span>" in a new capacity
         within the
         <span className=" font-medium"> IT </span>
         field.
-      </p>
-      <p>
+        <br />
         Thus, I made the decision to become a
         <span className=" font-medium"> software engineer</span>. I enjoy to
-        <span className=" italic"> exploring</span> and
-        <span className=" italic"> absorbing </span>
-        as much <span className=" italic">knowledge</span> about
+        exploring and absorbing as much knowledge about
         <span className=" font-medium"> web development</span> as I can, by
-        experimenting
-        <span className=" italic"> various</span> technologies. I learned the
-        <span className=" italic"> basic trinity</span> of
+        experimenting various technologies. I learned the basic trinity of
         <span className=" font-medium"> HTML</span>,{" "}
         <span className=" font-medium"> CSS</span> and
         <span className=" font-medium"> JavaScript</span>, had gained experience
         with
         <span className=" font-medium"> PHP</span>,
         <span className=" font-medium"> MySQL</span>,
-        <span className=" font-medium"> GitHub</span>, and related
-        <span className=" italic"> libraries</span> and
-        <span className=" italic"> frameworks</span> such as
+        <span className=" font-medium"> GitHub</span>, and related libraries and
+        frameworks such as
         <span className=" font-medium"> Bootstrap</span>,
         <span className=" font-medium"> Sass</span>,
         <span className=" font-medium"> Tailwind</span>,
