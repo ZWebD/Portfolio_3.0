@@ -3,8 +3,9 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { easeInOut, motion } from "framer-motion";
 import Link from "next/link";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
-import { HiDownload } from "react-icons/hi";
+import { RiMailSendLine } from "react-icons/ri";
+import { BsChatText, BsLinkedin } from "react-icons/bs";
+import { HiOutlineDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
@@ -20,6 +21,16 @@ export default function Intro() {
       ref={ref}
       className="scroll-mt-28 xl:pt-40 pt-28 mb-28 max-w-[50rem] text-center sm:mb-0 "
     >
+      <div
+        id="blur1"
+        className="bg-[#fbe2e3] absolute top-[3rem] blur-3xl -z-10 right-[30%] 2xl:right-[40%] h-[15%] w-[31.25rem] rounded-full sm:w-[30.75rem]  dark:bg-[#946263] overflow-visible"
+      ></div>
+
+      <div
+        id="blur2"
+        className="bg-[#dbd7fb] absolute top-[1rem] blur-2xl -z-10 right-[25%] 2xl:right-[35%] h-[13%] w-[31.25rem] rounded-full sm:w-[30.75rem]  dark:bg-[#676394] overflow-visible"
+      ></div>
+
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -38,7 +49,7 @@ export default function Intro() {
               height="192"
               quality="95"
               priority={true}
-              className="h-48 w-48 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-48 w-48 rounded-full object-cover border-[0.15rem] border-gray-500 dark:border-[0.15rem] dark:border-white shadow-xl"
             />
           </motion.div>
           {}
@@ -69,7 +80,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Zoltan.</span>I'm a self-taught
+        <span className="font-bold">Hello, I'm Zoltan.</span> I'm a self-taught
         <span className="font-bold"> Front-end Engineer</span> with coding
         experience. I love building applications, with a main focus on{" "}
         <span className="font-bold">React</span> and related technologies.
@@ -82,36 +93,36 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition
-          dark:bg-black dark:bg-opacity-80"
+          className="group bg-gray-900 text-white/70 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition
+          dark:bg-black dark:bg-opacity-80 hover:text-white/90"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
           }}
         >
           Get in touch
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+          <RiMailSendLine className="opacity-80 group-hover:scale-110 group-hover:translate-x-2 transition" />
         </Link>
         <a
           href="https://drive.google.com/uc?export=download&id=1Z6W-4RJdlX7vdkVn9w7FbXbzDGxv607D"
           download
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+          className="group bg-white text-gray-600 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack hover:text-gray-950 dark:hover:text-white/90 dark:bg-white/10 dark:text-white/60"
         >
           Download CV{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+          <HiOutlineDownload className="opacity-80 group-hover:scale-110 group-hover:translate-y-[0.15rem] transition duration-[50ms]" />
         </a>
         <div className="flex flex-row gap-4">
           <a
             href="https://linkedin.com/in/zoltan-szabo-048a51136/"
             target="_blank"
-            className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            className="bg-white p-4 text-gray-600 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 dark:hover:text-white/90 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           >
             <BsLinkedin />
           </a>
           <a
             href="https://github.com/ZWebD"
             target="_blank"
-            className="bg-white p-4 text-gray-700 flex items-center gap-2 test-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            className="bg-white p-4 text-gray-600 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 dark:hover:text-white/90 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           >
             <FaGithubSquare />
           </a>
