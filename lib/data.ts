@@ -77,7 +77,7 @@ export const projectsData = [
   {
     title: "Portfolio 1.0",
     description:
-      "I built this early portfolio concept  to improve my coding skills and knowledge",
+      "I built this early portfolio concept to improve my coding skills.",
     dev: "",
     tags: ["HTML", "SCSS", "JavaScript"],
     buttons: [

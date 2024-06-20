@@ -4,7 +4,7 @@ import Image from "next/image";
 import { easeInOut, motion } from "framer-motion";
 import Link from "next/link";
 import { RiMailSendLine } from "react-icons/ri";
-import { BsChatText, BsLinkedin } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
 import { HiOutlineDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
@@ -19,7 +19,7 @@ export default function Intro() {
     <section
       id="home"
       ref={ref}
-      className="scroll-mt-28 xl:pt-40 pt-28 mb-28 max-w-[50rem] text-center sm:mb-0 "
+      className="scroll-mt-28 xl:pt-40 pt-28 mb-40 max-w-[50rem] text-center sm:mb-0 "
     >
       <div
         id="blur1"
@@ -69,7 +69,6 @@ export default function Intro() {
               ease: toggle ? "easeInOut" : null,
               times: toggle ? [0, 0.2, 0.4, 0.6, 0.8, 1] : 0,
             }}
-            // whileHover={{ scale: 2 }}
           >
             👋
           </motion.span>
@@ -80,10 +79,9 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Zoltan.</span> I'm a self-taught
-        <span className="font-bold"> Front-end Engineer</span> with coding
-        experience. I love building applications, with a main focus on{" "}
-        <span className="font-bold">React</span> and related technologies.
+        Hello, I'm Zoltan. I'm a self-taught Front-end Engineer with coding
+        experience. I love building applications, with a main focus on React and
+        related technologies.
       </motion.h1>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-7 px-4 text-lg font-medium"
@@ -94,7 +92,7 @@ export default function Intro() {
         <Link
           href="#contact"
           className="group bg-gray-900 text-white/70 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition
-          dark:bg-black dark:bg-opacity-80 hover:text-white/90"
+           hover:text-white/90"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
