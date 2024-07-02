@@ -24,7 +24,7 @@ export default function Contact() {
       <motion.section
         id="contact"
         ref={ref}
-        className=" mb-20 sm:mb28 w-[min(100%,38rem)] text-center"
+        className=" mb-20 w-[min(100%,38rem)] text-center"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
@@ -32,7 +32,7 @@ export default function Contact() {
       >
         <SectionHeading>Contact me</SectionHeading>
 
-        <p className=" text-gray-700 -mt-6 dark:text-white/80">
+        <p className=" text-gray-700 mt-6 dark:text-white/80">
           If you'd like to collaborate or have an enquiry, please contact me
           directly at{" "}
           <a className="underline" href="mailto:zoltanszdev@gmail.com">

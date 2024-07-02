@@ -17,7 +17,7 @@ export default function About() {
       transition={{ delay: 0.175 }}
     >
       <SectionHeading>About me</SectionHeading>
-      <p className="mb-3 text-xl max-sm:text-sm font-medium">
+      <p className="mb-3 text-xl max-sm:text-base">
         From a very young age, I've always been fascinated by technology and how
         things work, especially digital devices. This curiosity fueled my desire
         to become a laptop engineer, but after a successful decade, I craved a
