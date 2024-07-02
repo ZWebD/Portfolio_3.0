@@ -26,7 +26,7 @@ export default function Project({
     <motion.div
       ref={ref}
       style={{ scale: scaleProgress, opacity: opacityProgress }}
-      className="group mb-3 sm:mb-8 last:mb-0"
+      className="group mb-8 last:mb-0"
     >
       <section className="relative flex flex-col-reverse sm:flex-row sm:bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 sm:h-[20rem] sm:group-even:pl-10 sm:group-odd:pl-10 sm:hover:bg-gray-300 transition dark:bg-white/10 sm:dark:hover:bg-white/20 dark:text-white">
         <div className=" max-sm:dark:bg-gray-900 max-sm:rounded-t-xl sm:group-odd:w-1/2">
