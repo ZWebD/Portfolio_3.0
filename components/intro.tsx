@@ -79,8 +79,8 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        Hello, I'm Zoltan. I'm a self-taught Front-end Engineer with coding
-        experience. I love building applications, with a main focus on React and
+        Hello, I'm Zoltan. I'm a self-taught Front-end Developer with coding
+        experience. I love building applications, focusing mainly on React and
         related technologies.
       </motion.h1>
       <motion.div
